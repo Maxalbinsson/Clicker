@@ -107,19 +107,24 @@ window.addEventListener('load', (event) => {
  */
 upgrades = [
     {
-        name: 'Fin sop',
+        name: 'Quick scope',
         cost: 10,
         amount: 1,
     },
     {
-        name: 'Spade',
+        name: 'Mountain dew',
         cost: 100,
         amount: 10,
     },
     {
-        name: 'Hjälpreda',
+        name: 'Sanic',
         cost: 1000,
         amount: 100,
+    },
+    {
+        name: 'deal with it',
+        cost: 10000,
+        amont:500,
     },
 ];
 
