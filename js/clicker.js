@@ -73,7 +73,7 @@ function step(timestamp) {
     // på samma sätt kan du även dölja uppgraderingar som inte kan köpas
     if (moneyPerClick == 10 && !achievementTest) {
         achievementTest = true;
-        message('Du har hittat en FOSSIL!', 'achievement');
+        message('Grattis du har hittat en fet blunt!', 'achievement');
     }
 
     window.requestAnimationFrame(step);
@@ -110,6 +110,7 @@ upgrades = [
         name: 'Quick scope',
         cost: 10,
         amount: 1,
+
     },
     {
         name: 'Mountain dew',
@@ -122,9 +123,14 @@ upgrades = [
         amount: 100,
     },
     {
-        name: 'deal with it',
+        name: 'Deal with it',
         cost: 10000,
-        amont:500,
+        amount: 500,
+    },
+    {
+        name: "Wow",
+        cost: 25000,
+        amount: 1000
     },
 ];
 
@@ -154,18 +160,18 @@ function createCard(upgrade) {
     const cost = document.createElement('p');
 
     header.textContent = `${upgrade.name}, +${upgrade.amount} per sekund.`;
-    cost.textContent = `Köp för ${upgrade.cost} benbitar.`;
+    cost.textContent = `Köp för ${upgrade.cost} hitmarkers.`;
 
     card.addEventListener('click', (e) => {
         if (money >= upgrade.cost) {
             moneyPerClick++;
             money -= upgrade.cost;
             upgrade.cost *= 1.5;
-            cost.textContent = 'Köp för ' + upgrade.cost + ' benbitar';
+            cost.textContent = 'Köp för ' + upgrade.cost + ' hitmarkers';
             moneyPerSecond += upgrade.amount;
-            message('Grattis du har lockat till dig fler besökare!', 'success');
+            message('Grattis du kan nu göra mer blunts', 'success');
         } else {
-            message('Du har inte råd.', 'warning');
+            message('Skaffa mer hitmarkers.', 'warning');
         }
     });
 

@@ -201,7 +201,7 @@ footer {
 }
 
 .achievement {
-    color: #121212;
+    color: #faf6f6;
     background-color: rebeccapurple;
 }
 
@@ -227,4 +227,36 @@ footer {
 .title {
     font-weight: 600;
 }
+.center {
+    position: fixed;
+    right: 4vmin;
+    bottom: 4vmin;
+    min-width: 7rem;
+}
+
+.bild{
+    position: fixed;
+    top: 4vmin;
+    right: 4vmin;
+    min-width: 7rem;
+    width: 11rem;
+    height: 8rem;
+
+}
+
+.bild2{
+    position: fixed;
+    top: 4vmin;
+    left: 4vmin;
+    width: 6rem;
+    height: 9rem;
+}
+.bild3{
+    position: fixed;
+    bottom: 4vmin;
+    left: 4vmin;
+    width: 6rem;
+    height: 9rem;
+}
+    
 
