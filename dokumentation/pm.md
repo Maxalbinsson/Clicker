@@ -1,3 +1,9 @@
+## Titel
+Clicker titel: Mlg clicker
+Tagline: I Mlg clicker så är ditt jobb att få så många hitmarkers som du kan så du kan köpa mer uppgrederingar.
+Url: https://maxalbinsson.github.io/Clicker/
+Git: https://github.com/Maxalbinsson/Clicker
+
 ## Vad jag jort
 Jag har gjort ett clicker spel som har temat mlg Jag har inte gjort så mycket egen java script eftersom att vi redan hade en mall. Jag har mest ändrat hur själva layouten ser ut och laggt in nya bilder och uppgraderingar. 
 
